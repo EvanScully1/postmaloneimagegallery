@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    background-image: url(/postmaloneimagegallery/images/20542273.jpg);
+    background-attachment: fixed;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-image: url(../images/485abdef-2125-4055-8fac-92fefd911984-GettyImages-1176233248-scaled.jpg);
+  }
+
+  header h2 {
+    font-size: 250%;
+    text-shadow: 1px 1px 5px white;
+    margin-left: 5em;
+    color: black;
+  }
+
+  body {
+    font-family: Arial;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    max-width: 450px;
+    width: 100%;
+  }
+
+  footer {
+    color: white;
+    font-weight: bold;
+    background-image: url(/postmaloneimagegallery/images/6ccad4a10c874aac47187bc65243fa45.jpg);
+    text-align: center;
+    padding: 2vh 0;
+    line-height: 1.25em;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  /* @media (max-width: 1000px) {
+    .column {
+      flex: 33.3%;
+      max-width: 33.3%;
+    }
+  } */
+
+  @media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
